@@ -24,9 +24,10 @@ do {
 	
 
 }
-
+//Muestra el acumulador
 document.getElementById('suma').value=acumulador;
 promedio = acumulador / contador;
+//Muestra el promedio
 document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN
