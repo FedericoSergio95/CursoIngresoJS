@@ -55,10 +55,10 @@ function mostrar()
 	promedioPositivos = acumuladorPositivos / cantidadPositivo;
 	diferenciaNegativosPositivos = promedioPositivos - promedioNegativos;
 
-	document.write("El total de numeros positivos es de : "+acumuladorPositivos + "\n"+
-					"El total de numeros negativos es de : "+acumuladorNegativos + "\n"+
-					"El promedio de numeros negativos es de : "+promedioNegativos + "\n"+
-					"El promedio de numeros positivos es de : "+promedioPositivos + "\n"+
+	document.write("El total de numeros positivos es de : "+acumuladorPositivos + "<br>"+
+					"El total de numeros negativos es de : "+acumuladorNegativos + "<br>"+
+					"El promedio de numeros negativos es de : "+promedioNegativos + "<br>"+
+					"El promedio de numeros positivos es de : "+promedioPositivos + "<br>"+
 					"La cantidad de ceros es de : "+cantidadCeros)
 
 }//FIN DE LA FUNCIÓN
