@@ -3,8 +3,8 @@ function mostrar()
 
 	var contador=0;
 	//declarar contadores y variables 
-	var positivos = 0;
-	var negativos = 0;
+	var acumuladorPositivos = 0;
+	var acumuladorNegativos = 0;
 	var numeroIngresado;
 	var cantidadNegativo = 0;
 	var cantidadPositivo = 0;
@@ -28,7 +28,7 @@ function mostrar()
 
 	if (numeroIngresado>0) {
 		//es positivo
-		positivos = positivos + numeroIngresado;
+		acumuladorPositivos = acumuladorPositivos + numeroIngresado;
 		cantidadPositivo++;
 		var resto = numeroIngresado % 2;
 		if (resto == 0) {
@@ -37,7 +37,7 @@ function mostrar()
 		}
 	} else if (numeroIngresado<0) {
 		//es negativo
-		negativos = negativos + numeroIngresado;
+		acumuladorNegativos = acumuladorNegativos + numeroIngresado;
 		cantidadNegativo++;
 		
 	} else {
@@ -51,9 +51,14 @@ function mostrar()
 	} //terminamos el bucle
 
 	//Se calculan los promedios
-	promedioNegativos = negativos / cantidadNegativo;
-	promedioPositivos = positivos / cantidadPositivo;
+	promedioNegativos = acumuladorNegativos / cantidadNegativo;
+	promedioPositivos = acumuladorPositivos / cantidadPositivo;
 	diferenciaNegativosPositivos = promedioPositivos - promedioNegativos;
 
+	document.write("El total de numeros positivos es de : "+acumuladorPositivos + "\n"+
+					"El total de numeros negativos es de : "+acumuladorNegativos + "\n"+
+					"El promedio de numeros negativos es de : "+promedioNegativos + "\n"+
+					"El promedio de numeros positivos es de : "+promedioPositivos + "\n"+
+					"La cantidad de ceros es de : "+cantidadCeros)
 
 }//FIN DE LA FUNCIÓN
