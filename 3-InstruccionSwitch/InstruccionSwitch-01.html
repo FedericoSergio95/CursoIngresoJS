@@ -4,18 +4,17 @@
 		<meta charset="utf-8">
 		<title>Curso Ingreso UTN FRA</title>
 
-		<!--Estilos-->
+			<!--Estilos-->
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
 		<link rel="stylesheet" type="text/css" href="../animacion.css">
-			
-
 		<!--final de Estilos-->
-		
-		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsEntradaSalida-10.js"></script>
-        <!--Final de Lógica-Programación -->
 
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="jsInstruccionSwitch-01.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+     <link rel="icon" type="image/x-icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -24,7 +23,7 @@
 <div class=" animated bounceIn header">
     
 
-     <center><h5>E/S  <strong> Ejercicio 10 </strong> </h5></center> 
+     <center><h5>Switch  <strong> Ejercicio 1 </strong> </h5></center> 
    <a  class="MiBotonUTNnav" onclick="location.href='index.html'" ><i class="far fa-hand-point-left"></i>Men&uacute; ejercicios</a> 
 </div>
 
@@ -38,13 +37,24 @@
   <div class="col-6 col-s-9">
    	
 		<form class=" animated bounceInLeft FormIngreso">
-		<h1>Ingrese el importe</h1>
-				<input type="text"  placeholder="Ingrese importe" id="txtIdImporte">
-
-				<input type="text" readonly  placeholder="Resultado" id="txtIdResultado">
+		<h1>Elija un mes</h1>
+					<select id ="txtIdMes">
+					<option value="Enero">Enero</option>
+					<option value="Febrero">Febrero</option>
+					<option value="Marzo">Marzo</option>
+					<option value="Abril">Abril</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Junio">Junio</option>
+					<option value="Julio">Julio</option>
+					<option value="Agosto">Agosto</option>
+					<option value="Septiembre">Septiembre</option>
+					<option value="Octubre">Octubre</option>
+					<option value="Noviembre">Noviembre</option>
+					<option value="Diciembre">Diciembre</option>
+				</select>
 		
 			
-			<a  class="MiBotonUTNnav"  onclick="mostrarAumento()" >Mostrar  descuento</a>
+			<a  class="MiBotonUTNnav"  onclick="mostrar()" >Mostrar  informaci&oacute;n</a>
 			
 	</form>				
    
@@ -55,9 +65,12 @@
   <h2>Enunciado:</h2>
 			
 				<h3>
-					Debemos lograr tomar el importe por ID.value ,
-					</br>transformarlo a entero "parseInt()", luego
-					</br>mostrar el importe con un decuento del 25 %. en el cuadro de texto "txtIdResultado"
+						al seleccionar un mes  informar.
+						</br>si es Enero: "que comiences bien el año!!!."
+						</br>si es Marzo: "a clases!!!."
+						</br>si es Julio: "se vienen las vacaciones!!!."
+						</br>si es Diciembre: "Felices fiesta!!!."
+				
 				</h3>
      
     </div>
